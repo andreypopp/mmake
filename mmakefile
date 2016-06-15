@@ -1,0 +1,5 @@
+import {process} from './';
+
+export let lint =  process('./src', /\.js$/, resource =>
+	resource.process('eslint')
+);
